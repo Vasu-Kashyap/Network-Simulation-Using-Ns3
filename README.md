@@ -9,6 +9,7 @@ Bandwidth between N1 & N2 = 5Mbps; delay = 15ms
 Data is transferred over TCP on the link.
 
 node 0 node 1 node 2
+
 +----------------+ +----------------------+ +----------------+
 
 | ns-3 TCP | | ns-3 TCP | | ns-3 TCP |
