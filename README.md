@@ -7,16 +7,26 @@ This script simulates a network of three nodes (say, N0 and N1, N2) with followi
 Bandwidth between N0 & N1 = 10Mbps; delay = 10ms
 Bandwidth between N1 & N2 = 5Mbps; delay = 15ms
 Data is transferred over TCP on the link.
+
 node 0 node 1 node 2
 +----------------+ +----------------------+ +----------------+
+
 | ns-3 TCP | | ns-3 TCP | | ns-3 TCP |
+
 +----------------+ +----------------------+ +----------------+
+
 | 10.1.1.1 | | 10.1.1.2, 10.1.2.1| | 10.1.2.2 |
+
 +----------------+ +-----------------------+ +----------------+
+
 | point-to-point | | point-to-point | | point-to-point |
+
 +----------------+ +------------------------+ +----------------+
+
 | | | |
+
 +---------------------------------------+ +---------------------------+
+
 10Mbps, 10ms 5Mbps, 15ms
 The first few lines in the main function in the script are as follows..
 std::string tcp_variant = "TcpCubic";
